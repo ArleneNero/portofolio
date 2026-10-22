@@ -1084,3 +1084,14 @@ body.modal-open{overflow:hidden}
 .section{ padding-top:clamp(46px,7vw,84px); padding-bottom:clamp(46px,7vw,84px); }
 .gallery{ padding-top:clamp(42px,6vw,72px); padding-bottom:clamp(42px,6vw,72px); }
 .section__head{ margin-bottom:clamp(26px,3.6vw,42px); }
+
+
+/* Additional verified projects: screenshot previews within the existing gallery. */
+.pcard--screenshot .pcard__img{height:59%;object-fit:cover;object-position:center top;background:#f5f8fa;transition:transform .65s var(--ease)}
+.pcard--screenshot:hover .pcard__img{transform:scale(1.025)}
+.pcard--screenshot .pcard__shade{background:linear-gradient(to top,rgba(7,12,16,.97) 0%,rgba(7,12,16,.90) 25%,rgba(7,12,16,.35) 51%,transparent 73%)}
+.pcard--screenshot .pcard__info{transform:none}
+.pmodal__cover.has-screenshot{height:auto;aspect-ratio:16/9;background:#f4f6f8}
+.pmodal__cover.has-screenshot .pmodal__cover-img{object-fit:contain}
+.pmodal__cover.has-screenshot .c-grid,.pmodal__cover.has-screenshot .c-shade{display:none}
+@media (max-width:560px){.pcard--screenshot .pcard__img{height:55%}}

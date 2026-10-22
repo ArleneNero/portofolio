@@ -309,26 +309,80 @@
 
   /* ---------- Data proyek (studi kasus) ---------- */
   var PROJECTS = {
+    xiaomimi: {
+      title: 'Xiaomimi Matcha — Hybrid RAG Chatbot',
+      category: 'Generative AI · Full-stack Web',
+      year: '2026', glyph: '🍵', accent: '#8cc77a', previewScreenshot: true,
+      img: 'img/portfolio-updates/xiaomimi.webp',
+      tagline: 'A matcha storefront with a Gemini-powered customer assistant grounded in a PDF knowledge base.',
+      overview: 'A full-stack React/Vite and Express/TypeScript website with a knowledge-grounded chatbot for matcha products and store information. The repository describes a PDF ingestion pipeline that produces 22 knowledge chunks, 768-dimensional embeddings stored in memory, cosine similarity plus lexical keyword boosting, and retrieval of the five strongest passages for Gemini. This is an in-memory hybrid RAG prototype rather than a persistent Qdrant deployment.',
+      features: [
+        'Separated React/Vite frontend components from the Express chatbot API.',
+        'Parsed a store-specific PDF knowledge base and generated embeddings for hybrid retrieval.',
+        'Ranked relevant passages using semantic cosine similarity and keyword-based boosting.',
+        'Designed grounded responses, out-of-scope handling and server-side API credentials.'
+      ],
+      metrics: [{ v: '22', l: 'Knowledge chunks' }, { v: '768D', l: 'Embeddings' }, { v: 'Top 5', l: 'Retrieved passages' }, { v: 'Hybrid', l: 'Retrieval method' }],
+      facts: [{ k: 'Type', v: 'Full-stack RAG prototype' }, { k: 'Vector store', v: 'In-memory' }, { k: 'Year', v: '2026' }],
+      stack: ['React', 'TypeScript', 'Node.js', 'Express', 'Gemini API', 'Hybrid RAG', 'PDF Parsing'],
+      links: { repo: 'https://github.com/ArleneNero/Website-Matcha-berbasis-Chatbot-RAG' }
+    },
+    mental: {
+      title: 'Hybrid Evidence Engine & Cascade XGBoost',
+      category: 'Machine Learning · NLP Research',
+      year: '2026', glyph: '🧠', accent: '#82c4ad', previewScreenshot: true,
+      img: 'img/portfolio-updates/mental-health.webp',
+      tagline: 'Award-winning NLP research for interpreting mental-health risk signals in public X posts.',
+      overview: 'Collaborative research applying multilingual Sentence-BERT, weighted evidence features and two-stage Cascade XGBoost to 1,899 cleaned public X posts. On a locked hold-out set of 100 annotated examples, the model achieved 85.0% accuracy and 0.852 weighted F1 versus a 58.0% rule baseline. SHAP explanations and a Streamlit dashboard support review. Results are research decision-support signals, not clinical diagnoses, and high-risk outputs require human judgement.',
+      features: [
+        'Applied Sentence-BERT embeddings, sentiment and evidence-weighted NLP features.',
+        'Compared two-stage Cascade XGBoost with a rule-based baseline.',
+        'Interpreted predictions using SHAP and created monitoring dashboards in Streamlit.',
+        'Documented evaluation limitations and the requirement for human review.'
+      ],
+      metrics: [{ v: '1,899', l: 'Posts analysed' }, { v: '85.0%', l: 'Hold-out accuracy' }, { v: '0.852', l: 'Weighted F1' }, { v: '1st', l: 'Innovation Award' }],
+      facts: [{ k: 'Evaluation', v: '100 hold-out samples' }, { k: 'Recognition', v: 'PalComTech 2026' }, { k: 'Limit', v: 'Not a diagnosis' }],
+      stack: ['Python', 'Sentence-BERT', 'XGBoost', 'scikit-learn', 'SHAP', 'Streamlit'],
+      links: { repo: 'https://github.com/ArleneNero/dashboard-sistem-deteksi-mental-health', live: 'https://dashboard-mental-health.streamlit.app' }
+    },
+    foresight: {
+      title: 'ForeSight — Predictive Crowd Management',
+      category: 'Predictive Analytics · Transportation',
+      year: '2026', glyph: '🚇', accent: '#74a9ef', previewScreenshot: true,
+      img: 'img/portfolio-updates/foresight-mrt.webp',
+      tagline: 'Predictive station crowd-risk dashboard built for the Smart Move Challenge MRT Jakarta 2026.',
+      overview: 'ForeSight combines XGBoost passenger-demand forecasting, time-related and operational features, weather and event signals in a prototype dashboard for 13 MRT stations. Forecasting horizons span 15 to 60 minutes. Out-of-time simulated-data evaluation reported sMAPE 14.16%; this result does not represent performance on live MRT production data. Features include station risk maps, historical replay and what-if operational mitigation scenarios. The team was selected as a Top 15 finalist.',
+      features: [
+        'Developed demand forecasting across 13 MRT stations using XGBoost.',
+        'Evaluated chronological forecasts at 15, 30, 45 and 60 minutes.',
+        'Mapped predicted crowd risk, replayed historical periods and simulated mitigations.',
+        'Designed dashboards for event, weather and station-level operational intelligence.'
+      ],
+      metrics: [{ v: '13', l: 'MRT stations' }, { v: '15–60m', l: 'Forecast horizon' }, { v: '14.16%', l: 'sMAPE (simulated)' }, { v: 'Top 15', l: 'SMC finalist' }],
+      facts: [{ k: 'Event', v: 'Smart Move Challenge' }, { k: 'Data', v: 'BPS-calibrated simulated' }, { k: 'Year', v: '2026' }],
+      stack: ['Python', 'XGBoost', 'Pandas', 'Time-Series Forecasting', 'React', 'Dashboard'],
+      links: { repo: 'https://github.com/ArleneNero/prototype_dashboard_mrt' }
+    },
     buzzer: {
       title: 'Coordinated Buzzer Detection (IGRS)',
       category: 'Research · Machine Learning and Network Analyst',
       year: '2026',
       glyph: '🕵️',
       accent: '#c6f24e',
-      img: 'img/buzzer.jpg',
-      tagline: 'A machine learning system detecting coordinated inauthentic behavior (buzzers) on X during the Steam IGRS controversy.',
-      overview: 'An end-to-end machine learning system built for a research study at Universitas Budi Luhur. The project detects coordinated buzzer accounts on platform X reacting to the Indonesia Game Rating System (IGRS) Steam controversy. By engineering coordination features (including SBERT semantic duplication and network interaction in-degree), the trained XGBoost model achieved a 93.1% average accuracy and 97.6% AUC, significantly outperforming heuristic baselines.',
+      img: 'img/portfolio-updates/buzzer.webp',
+      tagline: 'Investigating possible coordinated accounts in the IGRS discussion on X with machine learning, semantic features and network analysis.',
+      overview: 'Research investigating 1,264 cleaned posts from approximately 932 X accounts in the IGRS discussion. An XGBoost classifier combines semantic, lexical, temporal and interaction-network signals to identify potentially coordinated behaviour. Hold-out evaluation reported an F1 score of about 0.90 and AUC near 0.98; results indicate patterns, not proof of an account holder\'s intent.',
       features: [
-        'Engineered coordination features: semantic_dup_score, lexical, temporal, network.',
-        'Trained XGBoost classifier validated via 5-Fold Stratified Cross-Validation.',
-        'Model explanation using SHAP values (identifying semantic similarity as key).',
-        'Analysis of buzzer interaction networks revealing one-way broadcast behavior (in-degree ≈ 0).',
-        'Compared against heuristic baseline rules (Accuracy: 85% vs Model: 93%).'
+        'Engineered eight semantic, lexical, temporal and graph-based coordination features.',
+        'Compared XGBoost against heuristic baselines and interpreted model behaviour with SHAP.',
+        'Explored coordinated interaction patterns with DBSCAN, LDA and network analysis.',
+        'Built a four-tab Streamlit dashboard for validation, investigation, narratives and network findings.'
       ],
-      metrics: [{ v: '93.1%', l: 'Average Accuracy' }, { v: '89.7%', l: 'F1-score (XGBoost)' }, { v: '97.6%', l: 'Area Under Curve' }, { v: '5-Fold', l: 'Stratified CV' }],
+      metrics: [{ v: '1,264', l: 'Posts analysed' }, { v: '~932', l: 'Unique accounts' }, { v: '~0.90', l: 'Hold-out F1' }, { v: '~0.98', l: 'Hold-out AUC' }],
       facts: [{ k: 'Role', v: 'ML Researcher' }, { k: 'Institution', v: 'Universitas Budi Luhur' }, { k: 'Case Study', v: 'IGRS Steam Controversy' }],
       stack: ['Python', 'XGBoost', 'SHAP', 'SBERT', 'Gephi', 'Network Analysis'],
       slides: [
+        'img/portfolio-updates/buzzer.webp',
         'img/buzzer/slide-1.png',
         'img/buzzer/slide-2.png',
         'img/buzzer/slide-3.png',
@@ -348,10 +402,7 @@
         'img/buzzer/slide-17.png',
         'img/buzzer/slide-18.png'
       ],
-      links: {
-        slides: 'IGRS_Buzzer_Canva (4).pptx',
-        slides_label: 'Download Presentation (PPTX)'
-      }
+      links: { repo: 'https://github.com/ArleneNero/deteksi-buzzer-terkoordinasi' }
     },
     museum: {
       title: 'Nusantara Museum 3D',
@@ -372,7 +423,7 @@
       metrics: [{ v: '3D', l: 'Interactive web' }, { v: 'AI', l: 'Curator chatbot' }, { v: 'Zones', l: 'Exhibitions' }, { v: 'Docker', l: 'Deployment' }],
       facts: [{ k: 'Role', v: 'Fullstack · AI Integrator' }, { k: 'Category', v: 'Cultural Education Game' }, { k: 'Year', v: '2026' }],
       stack: ['React', 'Three.js', 'R3F', 'Node.js', 'Gemini API', 'Docker'],
-      links: { repo: 'https://github.com/ArleneNero', video: 'https://drive.google.com/file/d/1Yz5195NhR6RrNzu5cxKh3KMTSQcq8OVW/view?usp=drive_link' }
+      links: { repo: 'https://github.com/ArleneNero/museum-nusantara-ai', video: 'https://drive.google.com/file/d/1Yz5195NhR6RrNzu5cxKh3KMTSQcq8OVW/view?usp=drive_link' }
     },
     retail: {
       title: 'Retail Crisis & Recovery',
@@ -573,6 +624,7 @@
         elCoverIframe.style.display = 'none';
       }
       if (elCover) elCover.classList.remove('has-iframe');
+      if (elCover) elCover.classList.toggle('has-screenshot', !!p.previewScreenshot);
 
       var isDirectVideo = p.video && !p.video.includes('drive.google.com') && !p.video.includes('docs.google.com') && !p.video.includes('youtube.com') && !p.video.includes('youtu.be');
       var isDriveVideo = p.video && (p.video.includes('drive.google.com') || p.video.includes('docs.google.com'));
