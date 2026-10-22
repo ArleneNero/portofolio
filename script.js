@@ -587,6 +587,42 @@
       elScroll = $('pmScroll'),
       elSlides = $('pmSlides'), elSlidesTrack = $('pmSlidesTrack'), elSlidesCount = $('pmSlidesCount');
     var lastFocus = null;
+    var awardCertificates = {
+      mental: {
+        src: 'img/certificates/palcomtech-2026.png',
+        title: '1st Best Innovation Award',
+        award: 'Computer Science and Informatics category for the Hybrid Evidence Engine & Cascade XGBoost research project.',
+        organizer: '2nd PalComTech Student Conference 2026',
+        date: '30 July 2026',
+        alt: 'Official PalComTech 2026 1st Best Innovation Award certificate awarded to the research team'
+      },
+      retail: {
+        src: 'img/certificates/dqlab-top100-2026.png',
+        title: 'Top 100 Finalist — Rank #89 of 464',
+        award: 'Retail Crisis & Recovery Visualization Challenge using Python.',
+        organizer: 'DQLab × UjiKompetensi',
+        date: '9 May 2026',
+        alt: 'Official DQLab Top 100 hackathon certificate showing rank 89 out of 464 participants'
+      }
+    };
+    var certPanel = document.getElementById('pmCertificate');
+    var certKick = document.getElementById('pmKick');
+    var showCertificate = function (key, trigger) {
+      var fromAchievement = trigger && trigger.closest && trigger.closest('.award-block');
+      var cert = fromAchievement ? awardCertificates[key] : null;
+      if (!certPanel) return;
+      certPanel.hidden = !cert;
+      if (certKick) certKick.textContent = cert ? 'Award & Project Case Study' : 'Project Case Study';
+      if (!cert) return;
+      document.getElementById('pmCertImg').src = cert.src;
+      document.getElementById('pmCertImg').alt = cert.alt;
+      document.getElementById('pmCertLink').href = cert.src;
+      document.getElementById('pmCertTitle').textContent = cert.title;
+      document.getElementById('pmCertAward').textContent = cert.award;
+      document.getElementById('pmCertOrganizer').textContent = cert.organizer;
+      document.getElementById('pmCertDate').textContent = cert.date;
+    };
+
 
     var titleHTML = function (t) {
       var w = t.split(' ');
@@ -710,6 +746,7 @@
       var p = PROJECTS[key]; if (!p) return;
       lastFocus = trigger || null;
       fill(p);
+      showCertificate(key, trigger);
       modal.classList.add('is-open');
       modal.setAttribute('aria-hidden', 'false');
       document.body.classList.add('modal-open');

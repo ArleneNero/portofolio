@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css?v=20261022-achievements-cv" />
+<link rel="stylesheet" href="style.css?v=20261022-certificates-modal" />
 </head>
 <body>
   <!-- PRELOADER -->
@@ -185,7 +185,7 @@
               <p class="award-card__desc">Team research recognition for the Hybrid Evidence Engine and Cascade XGBoost project, combining explainable NLP and a monitoring dashboard for mental-health risk signals.</p>
               <div class="award-card__foot">
                 <span class="l">Linked project case study</span>
-                <span class="r">View Details <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+                <span class="r">View Certificate &amp; Details <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
               </div>
             </button>
 
@@ -219,7 +219,7 @@
               <p class="award-card__desc">Recognized in the Top 100 for retail recovery analysis using sales trends, growth indicators, and market basket analysis.</p>
               <div class="award-card__foot">
                 <span class="l">Linked project case study</span>
-                <span class="r">View Details <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+                <span class="r">View Certificate &amp; Details <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
               </div>
             </button>
           </div>
@@ -630,11 +630,31 @@
       </div>
       <div class="pmodal__scroll" id="pmScroll">
         <div class="pmodal__hero">
-          <p class="kick">Project Case Study</p>
+          <p class="kick" id="pmKick">Project Case Study</p>
           <h2 class="pmodal__title" id="pmTitle"></h2>
           <p class="pmodal__tagline" id="pmTagline"></p>
           <div class="pmodal__links" id="pmLinks"></div>
         </div>
+
+        <!-- Certificates are shown only for awards with uploaded evidence. -->
+        <section class="pmodal__certificate" id="pmCertificate" aria-label="Certificate of achievement" hidden>
+          <div class="pmodal__certificate-picture">
+            <a id="pmCertLink" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open certificate image in a new tab">
+              <img id="pmCertImg" alt="" loading="lazy" />
+            </a>
+          </div>
+          <div class="pmodal__certificate-info">
+            <p class="pmodal__certificate-kicker">Certificate of Achievement</p>
+            <h3 id="pmCertTitle"></h3>
+            <p id="pmCertAward"></p>
+            <dl class="pmodal__certificate-details">
+              <div><dt>Organizer</dt><dd id="pmCertOrganizer"></dd></div>
+              <div><dt>Date</dt><dd id="pmCertDate"></dd></div>
+              <div><dt>Recipient</dt><dd>Muhammad Ariefsyah</dd></div>
+            </dl>
+            <p class="pmodal__certificate-note">Tap the image to see the uploaded certificate preview. Project details and source links remain available below.</p>
+          </div>
+        </section>
         <div class="pmodal__cover" id="pmCover">
           <img class="pmodal__cover-img" id="pmCoverImg" alt="" />
           <video class="pmodal__cover-video" id="pmCoverVideo" controls playsinline></video>
@@ -676,6 +696,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=20261022-live-dashboards"></script>
+  <script src="script.js?v=20261022-certificates-modal"></script>
 </body>
 </html>

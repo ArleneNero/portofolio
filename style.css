@@ -1122,3 +1122,19 @@ body.modal-open{overflow:hidden}
 .award-card--compact .award-card__foot{margin-top:13px;padding-top:12px}
 .award-card--compact:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
 @media(max-width:580px){.award-block__head p{letter-spacing:.08em}.award-card--compact{padding:17px 16px}.award-card--compact .award-card__title{font-size:19px}.award-card--compact .award-card__foot .l{letter-spacing:.06em;font-size:8px}}
+
+/* Award certificate evidence within the existing case-study popup */
+.pmodal__certificate[hidden]{display:none !important}
+.pmodal__certificate{max-width:840px;margin:0 auto 18px;padding:20px 22px;display:grid;grid-template-columns:minmax(180px, 280px) minmax(0,1fr);align-items:center;gap:22px;border:1px solid #dce7e2;border-radius:13px;background:#f7fbf9;color:#17261f}
+.pmodal__certificate-picture{background:white;border:1px solid #e1e9e3;border-radius:9px;padding:12px;min-width:0;box-shadow:0 4px 16px rgba(0,0,0,.04)}
+.pmodal__certificate-picture a{display:block}
+.pmodal__certificate-picture img{display:block;width:100%;height:auto;object-fit:contain;aspect-ratio:1080 / 760;border-radius:3px}
+.pmodal__certificate-kicker{font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:.16em;color:#567f62;text-transform:uppercase;margin:0 0 9px}
+.pmodal__certificate-info h3{font-family:var(--font-display);font-size:clamp(19px,2.2vw,27px);line-height:1.15;letter-spacing:-.025em;color:#18271e;margin:0 0 9px}
+.pmodal__certificate-info>p:not(.pmodal__certificate-kicker){font-size:13px;line-height:1.6;color:#4b6052}
+.pmodal__certificate-details{display:grid;gap:9px;margin:15px 0}
+.pmodal__certificate-details>div{display:grid;grid-template-columns:76px minmax(0,1fr);gap:8px}
+.pmodal__certificate-details dt{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;color:#71877a}
+.pmodal__certificate-details dd{margin:0;font-size:12px;color:#26352d;line-height:1.5;font-weight:600}
+.pmodal__certificate-info .pmodal__certificate-note{font-size:11px !important;color:#738679 !important}
+@media(max-width:680px){.pmodal__certificate{grid-template-columns:1fr;margin:0 16px 16px;padding:14px;gap:14px}.pmodal__certificate-picture{padding:8px}.pmodal__certificate-picture img{max-height:250px}.pmodal__certificate-details>div{grid-template-columns:72px minmax(0,1fr)}}
