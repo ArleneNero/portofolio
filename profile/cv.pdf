@@ -1,0 +1,110 @@
+%PDF-1.4
+%PortfolioCV
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 5447 >>
+stream
+0.08 0.17 0.23 rg BT /F2 19 Tf 1 0 0 1 57 788.0 Tm (MUHAMMAD ARIEFSYAH) Tj ET
+0.17 0.23 0.29 rg BT /F2 10.5 Tf 1 0 0 1 57 767.0 Tm (AI Engineer Intern | Machine Learning | NLP | RAG) Tj ET
+0.17 0.23 0.29 rg BT /F1 8.5 Tf 1 0 0 1 57 749.0 Tm (Jakarta  |  muhammadariefsyah00@gmail.com  |  081317692622) Tj ET
+0.22 0.34 0.46 rg BT /F1 8.4 Tf 1 0 0 1 57 736.0 Tm (github.com/ArleneNero  |  linkedin.com/in/muhammad-ariefsyah-524baa152) Tj ET
+0.06 0.3 0.44 rg BT /F2 10.3 Tf 1 0 0 1 57 702.0 Tm (PROFESSIONAL SUMMARY) Tj ET
+0.86 0.89 0.91 RG 0.65 w 57 698.0 m 538 698.0 l S
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 57 676.0 Tm (Informatics Engineering undergraduate at Universitas Budi Luhur, semester 5 \(GPA 3.66/4.00\),) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 57 664.2 Tm (specializing in AI for Data Text. Experience developing machine-learning and NLP pipelines, evaluating) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 57 652.4 Tm (models, and building Retrieval-Augmented Generation \(RAG\) applications. Team member of the 1st Best) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 57 640.6 Tm (Innovation Award at PalComTech Student Conference 2026 and Top 15 Finalist at Smart Move Challenge MRT) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 57 628.8 Tm (Jakarta 2026.) Tj ET
+0.06 0.3 0.44 rg BT /F2 10.3 Tf 1 0 0 1 57 603.0 Tm (EDUCATION) Tj ET
+0.86 0.89 0.91 RG 0.65 w 57 599.0 m 538 599.0 l S
+0.11 0.19 0.25 rg BT /F2 9.6 Tf 1 0 0 1 57 577.0 Tm (Universitas Budi Luhur | B.Sc. Informatics Engineering | 2024 - Present) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 57 561.0 Tm (Specialization: AI for Data Text. GPA: 3.66/4.00. Relevant courses: Machine Learning, Natural Language) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 57 549.2 Tm (Processing, Data Mining.) Tj ET
+0.06 0.3 0.44 rg BT /F2 10.3 Tf 1 0 0 1 57 523.4 Tm (PROJECTS) Tj ET
+0.86 0.89 0.91 RG 0.65 w 57 519.4 m 538 519.4 l S
+0.11 0.19 0.25 rg BT /F2 9.6 Tf 1 0 0 1 57 497.4 Tm (Xiaomimi Matcha - In-Memory Hybrid RAG Chatbot \(2026\)) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 481.4 Tm (-  Built a React and Express/TypeScript customer assistant grounded in a cafe-specific PDF knowledge) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 469.6 Tm (base.) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 453.8 Tm (-  Parsed the document into 22 chunks with 768-dimensional embeddings in an in-memory index.) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 438.0 Tm (-  Implemented cosine-similarity retrieval with keyword boosting; selects five relevant chunks for) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 426.2 Tm (Gemini.) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 410.4 Tm (-  Server-side API credentials, out-of-scope handling, and lexical fallback. Stack: React,) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 398.6 Tm (TypeScript, Node.js, Express, Google GenAI SDK, Gemini, pdf-parse.) Tj ET
+0.11 0.19 0.25 rg BT /F2 9.6 Tf 1 0 0 1 57 382.8 Tm (ForeSight - Predictive MRT Crowd Management \(Smart Move Challenge 2026\)) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 366.8 Tm (-  Top 15 finalist. Built XGBoost demand forecasts across 13 stations for 15-60 minute horizons.) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 351.0 Tm (-  Combined transactions, train schedules, weather and event features using BPS-calibrated simulated) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 339.2 Tm (data.) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 323.4 Tm (-  Out-of-time evaluation: sMAPE 14.16%, MAE 8.15 passengers per interval; not operational MRT data.) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 307.6 Tm (-  Developed station/gate crowd-risk modeling, mitigation simulation and historical replay) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 295.8 Tm (dashboard.) Tj ET
+0.11 0.19 0.25 rg BT /F2 9.6 Tf 1 0 0 1 57 280.0 Tm (Coordinated Buzzer Detection on X - IGRS Case Study \(2026\)) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 264.0 Tm (-  Analyzed 1,264 posts from approximately 932 accounts for possible coordinated behaviors.) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 248.2 Tm (-  Engineered eight semantic, lexical, temporal and network features; XGBoost achieved approximately) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 236.4 Tm (0.90 F1 and 0.98 AUC on hold-out evaluation.) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 220.6 Tm (-  Used SHAP, DBSCAN, LDA and network analysis to interpret and map potential coordination.) Tj ET
+0.06 0.3 0.44 rg BT /F2 10.3 Tf 1 0 0 1 57 197.8 Tm (RESEARCH & PUBLICATIONS) Tj ET
+0.86 0.89 0.91 RG 0.65 w 57 193.8 m 538 193.8 l S
+0.11 0.19 0.25 rg BT /F2 9.6 Tf 1 0 0 1 57 171.8 Tm (Hybrid Evidence Engine and Cascade XGBoost for Early Mental Health Risk Signals) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 57 155.8 Tm (Team research, 2nd PalComTech Student Conference 2026. 1st Best Innovation Award \(Computer Science and) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 57 144.0 Tm (Informatics\).) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 125.2 Tm (-  Processed 1,899 public X posts with multilingual Sentence-BERT, sentiment and five weighted) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 113.4 Tm (evidence categories.) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 97.6 Tm (-  Two-stage Cascade XGBoost: 85.0% accuracy and 0.852 weighted F1 on 100 hold-out cases; rule) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 85.8 Tm (baseline 58.0%.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 1793 >>
+stream
+0.2 0.25 0.29 rg
+0.17 0.23 0.29 rg BT /F2 8 Tf 1 0 0 1 57 787.0 Tm (MUHAMMAD ARIEFSYAH  /  CURRICULUM VITAE) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 754.0 Tm (-  Applied SHAP, safety-first rules and Streamlit monitoring. Statistical-only critical-class) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 742.2 Tm (recall: 45.5%. Outputs are decision-support signals, not diagnoses.) Tj ET
+0.06 0.3 0.44 rg BT /F2 10.3 Tf 1 0 0 1 57 719.4 Tm (TECHNICAL SKILLS) Tj ET
+0.86 0.89 0.91 RG 0.65 w 57 715.4 m 538 715.4 l S
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 57 693.4 Tm (Machine Learning & NLP: Python, scikit-learn, XGBoost, Sentence-BERT, TF-IDF, feature engineering, model) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 57 681.6 Tm (evaluation, SHAP.) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 57 662.8 Tm (Generative AI & Development: Retrieval-Augmented Generation, LLM API integration, JavaScript,) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 57 651.0 Tm (TypeScript, React, Node.js, Express, SQL.) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 57 632.2 Tm (Tools: Git, Jupyter/Colab, Streamlit, Docker, Pandas, Matplotlib, Gephi.) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 57 613.4 Tm (Soft skills and language: Critical analysis, technical documentation, teamwork; Indonesian and English.) Tj ET
+0.06 0.3 0.44 rg BT /F2 10.3 Tf 1 0 0 1 57 587.6 Tm (AWARDS) Tj ET
+0.86 0.89 0.91 RG 0.65 w 57 583.6 m 538 583.6 l S
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 561.6 Tm (-  1st Best Innovation Award, Computer Science and Informatics, 2nd PalComTech Student Conference) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 549.8 Tm (\(30 July 2026\).) Tj ET
+0.18 0.24 0.3 rg BT /F1 8.9 Tf 1 0 0 1 67 534.0 Tm (-  Top 15 Finalist, Smart Move Challenge MRT Jakarta \(October 2026\).) Tj ET
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000022 00000 n 
+0000000071 00000 n 
+0000000134 00000 n 
+0000000231 00000 n 
+0000000333 00000 n 
+0000000469 00000 n 
+0000005967 00000 n 
+0000006103 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+7947
+%%EOF

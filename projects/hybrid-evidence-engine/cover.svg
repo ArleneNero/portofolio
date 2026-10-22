@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720"><rect width="1280" height="720" fill="#E9EFED"/>
+<rect x="45" y="43" width="1190" height="635" rx="26" fill="#FFFFFF"/>
+<path d="M70 43h235v635H70q-25 0-25-25V68q0-25 25-25Z" fill="#19343D"/>
+<text x="86" y="111" font-family="Arial,sans-serif" font-weight="bold" font-size="24" fill="#FFFFFF">Evidence Monitor</text>
+<text x="89" y="158" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#9EC0C1">RESEARCH PROTOTYPE</text>
+<rect x="78" y="215" width="194" height="49" rx="13" fill="#33555D"/>
+<text x="110" y="246" font-family="Arial,sans-serif" font-size="18" fill="#FFFFFF">Overview</text>
+<text x="110" y="318" font-family="Arial,sans-serif" font-size="17" fill="#C4D8D8">Evidence review</text>
+<text x="110" y="377" font-family="Arial,sans-serif" font-size="17" fill="#C4D8D8">Topic analysis</text>
+<text x="110" y="436" font-family="Arial,sans-serif" font-size="17" fill="#C4D8D8">Support networks</text>
+<text x="340" y="115" font-family="Arial,sans-serif" letter-spacing="3" font-weight="bold" font-size="13" fill="#648C8A">HYBRID EVIDENCE ENGINE</text>
+<text x="340" y="167" font-family="Arial,sans-serif" font-weight="bold" font-size="37" fill="#1D363C">Early-signal monitoring</text>
+<text x="340" y="203" font-family="Arial,sans-serif" font-size="18" fill="#74878A">Evidence-driven triage, not a clinical diagnosis</text>
+<rect x="340" y="244" width="267" height="126" rx="16" fill="#EDF5F2"/><rect x="624" y="244" width="267" height="126" rx="16" fill="#F0F4F8"/><rect x="908" y="244" width="279" height="126" rx="16" fill="#F5F3EF"/>
+<text x="363" y="276" font-family="Arial,sans-serif" font-size="15" fill="#73918B">SEMANTIC SIGNALS</text>
+<text x="363" y="322" font-family="Arial,sans-serif" font-size="25" font-weight="bold" fill="#325E54">Sentence-BERT</text>
+<text x="648" y="276" font-family="Arial,sans-serif" font-size="15" fill="#71859C">CLASSIFICATION</text>
+<text x="648" y="322" font-family="Arial,sans-serif" font-size="25" font-weight="bold" fill="#355376">Cascade XGBoost</text>
+<text x="932" y="276" font-family="Arial,sans-serif" font-size="15" fill="#8B806A">MODEL EVIDENCE</text>
+<text x="932" y="322" font-family="Arial,sans-serif" font-size="25" font-weight="bold" fill="#5B5341">SHAP insights</text>
+<rect x="340" y="395" width="847" height="241" rx="16" fill="#FAFCFB" stroke="#E8EFEC"/>
+<text x="369" y="432" font-family="Arial,sans-serif" font-weight="bold" font-size="19" fill="#32474A">Monitoring signals over time</text>
+<text x="1086" y="432" font-family="Arial,sans-serif" font-size="13" fill="#8C9B9D">Concept</text>
+<path d="M370 489H1150M370 539H1150M370 591H1150" stroke="#DDE9E5" stroke-width="2"/>
+<path d="M373 566 Q420 544 484 560 T619 517 T756 530 T889 475 T1021 499 T1150 458" fill="none" stroke="#548A81" stroke-width="6" stroke-linecap="round"/>
+<path d="M373 596 Q432 593 484 583 T619 562 T756 571 T889 554 T1021 564 T1150 527" fill="none" stroke="#A8C5C0" stroke-width="5" stroke-linecap="round"/>
+</svg>
