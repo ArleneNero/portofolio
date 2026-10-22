@@ -325,7 +325,7 @@
       metrics: [{ v: '22', l: 'Knowledge chunks' }, { v: '768D', l: 'Embeddings' }, { v: 'Top 5', l: 'Retrieved passages' }, { v: 'Hybrid', l: 'Retrieval method' }],
       facts: [{ k: 'Type', v: 'Full-stack RAG prototype' }, { k: 'Vector store', v: 'In-memory' }, { k: 'Year', v: '2026' }],
       stack: ['React', 'TypeScript', 'Node.js', 'Express', 'Gemini API', 'Hybrid RAG', 'PDF Parsing'],
-      links: { repo: 'https://github.com/ArleneNero/Website-Matcha-berbasis-Chatbot-RAG' }
+      links: { repo: 'https://github.com/ArleneNero/Website-Matcha-berbasis-Chatbot-RAG', live: 'https://website-matcha-berbasis-chatbot-rag.vercel.app/' }
     },
     mental: {
       title: 'Hybrid Evidence Engine & Cascade XGBoost',
@@ -343,7 +343,7 @@
       metrics: [{ v: '1,899', l: 'Posts analysed' }, { v: '85.0%', l: 'Hold-out accuracy' }, { v: '0.852', l: 'Weighted F1' }, { v: '1st', l: 'Innovation Award' }],
       facts: [{ k: 'Evaluation', v: '100 hold-out samples' }, { k: 'Recognition', v: 'PalComTech 2026' }, { k: 'Limit', v: 'Not a diagnosis' }],
       stack: ['Python', 'Sentence-BERT', 'XGBoost', 'scikit-learn', 'SHAP', 'Streamlit'],
-      links: { repo: 'https://github.com/ArleneNero/dashboard-sistem-deteksi-mental-health', live: 'https://dashboard-mental-health.streamlit.app' }
+      links: { repo: 'https://github.com/ArleneNero/dashboard-sistem-deteksi-mental-health', live: 'https://dashboard-mental-health.streamlit.app/' }
     },
     foresight: {
       title: 'ForeSight — Predictive Crowd Management',
@@ -402,7 +402,7 @@
         'img/buzzer/slide-17.png',
         'img/buzzer/slide-18.png'
       ],
-      links: { repo: 'https://github.com/ArleneNero/deteksi-buzzer-terkoordinasi' }
+      links: { repo: 'https://github.com/ArleneNero/deteksi-buzzer-terkoordinasi', dashboard: 'https://github.com/ArleneNero/dashboard-sistem-deteksi-buzzer-igrs' }
     },
     museum: {
       title: 'Nusantara Museum 3D',
@@ -423,7 +423,7 @@
       metrics: [{ v: '3D', l: 'Interactive web' }, { v: 'AI', l: 'Curator chatbot' }, { v: 'Zones', l: 'Exhibitions' }, { v: 'Docker', l: 'Deployment' }],
       facts: [{ k: 'Role', v: 'Fullstack · AI Integrator' }, { k: 'Category', v: 'Cultural Education Game' }, { k: 'Year', v: '2026' }],
       stack: ['React', 'Three.js', 'R3F', 'Node.js', 'Gemini API', 'Docker'],
-      links: { repo: 'https://github.com/ArleneNero/museum-nusantara-ai', video: 'https://drive.google.com/file/d/1Yz5195NhR6RrNzu5cxKh3KMTSQcq8OVW/view?usp=drive_link' }
+      links: { video: 'https://drive.google.com/file/d/1Yz5195NhR6RrNzu5cxKh3KMTSQcq8OVW/view?usp=drive_link' }
     },
     retail: {
       title: 'Retail Crisis & Recovery',
@@ -444,7 +444,7 @@
       facts: [{ k: 'Role', v: 'Data Analyst' }, { k: 'Event', v: 'DQLab × UjiKompetensi' }, { k: 'Month', v: 'May 2026' }],
       stack: ['Python', 'Pandas', 'Matplotlib', 'Market Basket Analysis'],
       slides: ['img/slides/slide-1.jpg', 'img/slides/slide-2.jpg', 'img/slides/slide-3.jpg', 'img/slides/slide-4.jpg', 'img/slides/slide-5.jpg', 'img/slides/slide-6.jpg', 'img/slides/slide-7.jpg', 'img/slides/slide-8.jpg', 'img/slides/slide-9.jpg'],
-      links: { repo: 'https://github.com/ArleneNero', slides: 'Data_Portofolio/PPT-Hackathon.pdf' }
+      links: { pdf: 'Data_Portofolio/PPT-Hackathon.pdf', pdf_label: 'View Retail Analysis (PDF)' }
     },
     banjir: {
       title: 'Flood Disaster Extraction in Sumatra',
@@ -464,11 +464,7 @@
       metrics: [{ v: 'UAS NLP', l: 'Project Category' }, { v: '100%', l: 'Time Coverage' }, { v: '97%', l: 'Disaster Coverage' }, { v: '600', l: 'Tweets Processed' }],
       facts: [{ k: 'Role', v: 'NLP Engineer' }, { k: 'Institution', v: 'Universitas Budi Luhur' }, { k: 'Focus', v: 'Rule-Based Extraction' }],
       stack: ['Python', 'Regex', 'BIO Tagging/NER', 'Gazetteer'],
-      links: {
-        repo: 'https://github.com/ArleneNero',
-        pdf: 'Data_Portofolio/Laporan Proyek UAS NLP (1).pdf',
-        pdf_label: 'Read Project Report (PDF)'
-      }
+      links: { pdf: 'Data_Portofolio/Laporan Proyek UAS NLP (1).pdf', pdf_label: 'Read NLP Project Report (PDF)' }
     },
     sentimen: {
       title: 'Sentiment Analysis: Jokowi Fake Degree Controversy',
@@ -489,11 +485,7 @@
       metrics: [{ v: '2.628', l: 'Shannon Entropy' }, { v: '979', l: 'Clean Tweets' }, { v: '9,071', l: 'KSI Lexicon Words' }, { v: '350', l: 'Manually Labeled' }],
       facts: [{ k: 'Role', v: 'Data Scientist' }, { k: 'Institution', v: 'Universitas Budi Luhur' }, { k: 'Course', v: 'Machine Learning Midterm' }],
       stack: ['Python', 'Naive Bayes', 'KSI Lexicon', 'Entropy Modeling', 'Text Mining'],
-      links: {
-        repo: 'https://github.com/ArleneNero',
-        pdf: 'Data_Portofolio/Ijazah Palsu Jokowi.pdf',
-        pdf_label: 'Read UTS Article (PDF)'
-      }
+      links: { pdf: 'Data_Portofolio/Ijazah Palsu Jokowi.pdf', pdf_label: 'Read Sentiment Analysis Report (PDF)' }
     },
     pkm: {
       title: 'Hydro-Chain AI Protocol',
@@ -696,14 +688,15 @@
         }
       }
       var links = '';
-      if (p.links && p.links.live) links += '<a class="primary" href="' + p.links.live + '" target="_blank" rel="noopener">🌐 View Live</a>';
+      if (p.links && p.links.live) links += '<a class="primary" href="' + p.links.live + '" target="_blank" rel="noopener noreferrer">🌐 Live Demo</a>';
       if (p.links && p.links.pdf) {
         var label = p.links.pdf_label || 'Read Proposal (PDF)';
         links += '<a class="primary" href="' + p.links.pdf + '" target="_blank" rel="noopener">📄 ' + label + '</a>';
       }
       if (p.links && p.links.chart) links += '<a class="primary" href="' + p.links.chart + '" target="_blank" rel="noopener">📊 View Analysis Result</a>';
       if (p.links && p.links.video) links += '<a class="primary" href="' + p.links.video + '" target="_blank" rel="noopener">🎬 Watch Demo Video</a>';
-      if (p.links && p.links.repo) links += '<a class="ghost" href="' + p.links.repo + '" target="_blank" rel="noopener">⎙ Repository</a>';
+      if (p.links && p.links.repo) links += '<a class="ghost" href="' + p.links.repo + '" target="_blank" rel="noopener noreferrer">⎙ Source Code</a>';
+      if (p.links && p.links.dashboard) links += '<a class="ghost" href="' + p.links.dashboard + '" target="_blank" rel="noopener noreferrer">▣ Dashboard Code</a>';
       if (p.links && p.links.slides) {
         var label = p.links.slides_label || 'Download PPT';
         links += '<a class="ghost" href="' + p.links.slides + '" target="_blank" rel="noopener">📑 ' + label + '</a>';
@@ -739,8 +732,12 @@
 
     // Buka dari kartu galeri + kartu award
     document.querySelectorAll('[data-project]').forEach(function (el) {
-      el.addEventListener('click', function () { open(el.getAttribute('data-project'), el); });
+      el.addEventListener('click', function (e) {
+        if (e.target.closest && e.target.closest('a')) return;
+        open(el.getAttribute('data-project'), el);
+      });
       el.addEventListener('keydown', function (e) {
+        if (e.target.closest && e.target.closest('a')) return;
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(el.getAttribute('data-project'), el); }
       });
     });

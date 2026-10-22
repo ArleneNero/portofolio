@@ -1095,3 +1095,9 @@ body.modal-open{overflow:hidden}
 .pmodal__cover.has-screenshot .pmodal__cover-img{object-fit:contain}
 .pmodal__cover.has-screenshot .c-grid,.pmodal__cover.has-screenshot .c-shade{display:none}
 @media (max-width:560px){.pcard--screenshot .pcard__img{height:55%}}
+
+
+/* Independent resource buttons in Selected Work; existing cards still open case-study modals. */
+.pcard__project-link{position:absolute;top:22px;left:24px;z-index:6;display:inline-flex;align-items:center;gap:6px;padding:9px 13px;background:rgba(8,13,17,.84);border:1px solid rgba(255,255,255,.36);border-radius:999px;color:#fff;font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:.045em;text-decoration:none;backdrop-filter:blur(8px);transition:background .2s,border-color .2s,transform .2s}
+.pcard__project-link:hover,.pcard__project-link:focus-visible{background:#fff;color:#111;border-color:#fff;transform:translateY(-1px)}
+@media(max-width:560px){.pcard__project-link{top:14px;left:14px;font-size:9.5px;padding:8px 11px}}
