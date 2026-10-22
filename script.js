@@ -310,11 +310,11 @@
   /* ---------- Data proyek (studi kasus) ---------- */
   var PROJECTS = {
     xiaomimi: {
-      title: 'Xiaomimi Matcha — Hybrid RAG Chatbot',
-      category: 'Generative AI · Full-stack Web',
+      title: "Xiaomimi Matcha — Hybrid RAG Chatbot",
+      category: "FULL-STACK AI · HYBRID RAG",
       year: '2026', glyph: '🍵', accent: '#8cc77a', previewScreenshot: true,
       img: 'img/portfolio-updates/xiaomimi.webp',
-      tagline: 'A matcha storefront with a Gemini-powered customer assistant grounded in a PDF knowledge base.',
+      tagline: "A full-stack matcha website with a knowledge-grounded customer assistant powered by hybrid retrieval and Gemini.",
       overview: 'A full-stack React/Vite and Express/TypeScript website with a knowledge-grounded chatbot for matcha products and store information. The repository describes a PDF ingestion pipeline that produces 22 knowledge chunks, 768-dimensional embeddings stored in memory, cosine similarity plus lexical keyword boosting, and retrieval of the five strongest passages for Gemini. This is an in-memory hybrid RAG prototype rather than a persistent Qdrant deployment.',
       features: [
         'Separated React/Vite frontend components from the Express chatbot API.',
@@ -328,11 +328,11 @@
       links: { repo: 'https://github.com/ArleneNero/Website-Matcha-berbasis-Chatbot-RAG', live: 'https://website-matcha-berbasis-chatbot-rag.vercel.app/' }
     },
     mental: {
-      title: 'Hybrid Evidence Engine & Cascade XGBoost',
-      category: 'Machine Learning · NLP Research',
+      title: "Hybrid Evidence Engine & Cascade XGBoost",
+      category: "NLP RESEARCH · EXPLAINABLE AI",
       year: '2026', glyph: '🧠', accent: '#82c4ad', previewScreenshot: true,
       img: 'img/portfolio-updates/mental-health.webp',
-      tagline: 'Award-winning NLP research for interpreting mental-health risk signals in public X posts.',
+      tagline: "Explainable NLP research for supporting human review of mental-health risk signals, not clinical diagnosis.",
       overview: 'Collaborative research applying multilingual Sentence-BERT, weighted evidence features and two-stage Cascade XGBoost to 1,899 cleaned public X posts. On a locked hold-out set of 100 annotated examples, the model achieved 85.0% accuracy and 0.852 weighted F1 versus a 58.0% rule baseline. SHAP explanations and a Streamlit dashboard support review. Results are research decision-support signals, not clinical diagnoses, and high-risk outputs require human judgement.',
       features: [
         'Applied Sentence-BERT embeddings, sentiment and evidence-weighted NLP features.',
@@ -346,11 +346,11 @@
       links: { repo: 'https://github.com/ArleneNero/dashboard-sistem-deteksi-mental-health', live: 'https://dashboard-mental-health.streamlit.app/' }
     },
     foresight: {
-      title: 'ForeSight — Predictive Crowd Management',
-      category: 'Predictive Analytics · Transportation',
+      title: "ForeSight — Predictive Crowd Management",
+      category: "PREDICTIVE ANALYTICS · TRANSPORT",
       year: '2026', glyph: '🚇', accent: '#74a9ef', previewScreenshot: true,
       img: 'img/portfolio-updates/foresight-mrt.webp',
-      tagline: 'Predictive station crowd-risk dashboard built for the Smart Move Challenge MRT Jakarta 2026.',
+      tagline: "Predictive MRT crowd-management prototype with station risk maps, historical replay and what-if scenarios.",
       overview: 'ForeSight combines XGBoost passenger-demand forecasting, time-related and operational features, weather and event signals in a prototype dashboard for 13 MRT stations. Forecasting horizons span 15 to 60 minutes. Out-of-time simulated-data evaluation reported sMAPE 14.16%; this result does not represent performance on live MRT production data. Features include station risk maps, historical replay and what-if operational mitigation scenarios. The team was selected as a Top 15 finalist.',
       features: [
         'Developed demand forecasting across 13 MRT stations using XGBoost.',
@@ -364,13 +364,13 @@
       links: { repo: 'https://github.com/ArleneNero/prototype_dashboard_mrt' }
     },
     buzzer: {
-      title: 'Coordinated Buzzer Detection (IGRS)',
-      category: 'Research · Machine Learning and Network Analyst',
+      title: "Coordinated Buzzer Detection (IGRS)",
+      category: "MACHINE LEARNING · NETWORK ANALYSIS",
       year: '2026',
       glyph: '🕵️',
       accent: '#c6f24e',
       img: 'img/portfolio-updates/buzzer.webp',
-      tagline: 'Investigating possible coordinated accounts in the IGRS discussion on X with machine learning, semantic features and network analysis.',
+      tagline: "An XGBoost research pipeline identifying potential coordination patterns in the Steam IGRS discussion on X.",
       overview: 'Research investigating 1,264 cleaned posts from approximately 932 X accounts in the IGRS discussion. An XGBoost classifier combines semantic, lexical, temporal and interaction-network signals to identify potentially coordinated behaviour. Hold-out evaluation reported an F1 score of about 0.90 and AUC near 0.98; results indicate patterns, not proof of an account holder\'s intent.',
       features: [
         'Engineered eight semantic, lexical, temporal and graph-based coordination features.',
@@ -405,14 +405,14 @@
       links: { repo: 'https://github.com/ArleneNero/deteksi-buzzer-terkoordinasi', dashboard: 'https://github.com/ArleneNero/dashboard-sistem-deteksi-buzzer-igrs' }
     },
     museum: {
-      title: 'Nusantara Museum 3D',
-      category: 'Project · Web 3D + AI',
+      title: "Nusantara Museum 3D",
+      category: "INTERACTIVE WEB 3D · GENERATIVE AI",
       year: '2026',
       glyph: '🏛️',
       accent: '#9b6bff',
       img: 'img/museum.jpg',
       video: 'https://drive.google.com/file/d/1Yz5195NhR6RrNzu5cxKh3KMTSQcq8OVW/view?usp=drive_link',
-      tagline: 'An interactive 3D virtual museum for Indonesian cultural heritage with a Gemini-powered AI Historian Chatbot.',
+      tagline: "Explore Indonesian culture through a navigable 3D museum and an AI-powered virtual historian.",
       overview: 'A web-based 3D museum experience with character exploration and several cultural exhibition zones. It features a Gemini-powered AI Historian Chatbot with cross-model fallback and prompt-injection protection, backed by a Node/Express backend and Docker deployment via Cloud Build.',
       features: [
         'Interactive 3D world (Three.js / React Three Fiber) with multiple zones.',
@@ -426,13 +426,13 @@
       links: { video: 'https://drive.google.com/file/d/1Yz5195NhR6RrNzu5cxKh3KMTSQcq8OVW/view?usp=drive_link' }
     },
     retail: {
-      title: 'Retail Crisis & Recovery',
-      category: 'Top 100 · Data Visualization',
+      title: "Retail Crisis & Recovery",
+      category: "DATA ANALYSIS · RETAIL INTELLIGENCE",
       year: '2026',
       glyph: '📈',
       accent: '#ff9b4e',
       img: 'img/retail.jpg',
-      tagline: 'Retail sales-recovery analysis for the DQLab × UjiKompetensi Hackathon, reaching Top 100 Finalist (Rank #89 of 464 participants).',
+      tagline: "Retail analytics covering recovery trends, fast-growing products and cross-selling opportunities.",
       overview: 'A post-crisis retail sales time-series analysis. I used Moving Averages to smooth trends, a growth index to measure recovery acceleration, identified rising-star products, and applied Market Basket Analysis to uncover bundling and cross-selling opportunities.',
       features: [
         'Sales-trend smoothing with Moving Averages.',
@@ -447,13 +447,13 @@
       links: { pdf: 'Data_Portofolio/PPT-Hackathon.pdf', pdf_label: 'View Retail Analysis (PDF)' }
     },
     banjir: {
-      title: 'Flood Disaster Extraction in Sumatra',
-      category: '2026 · Rule-Based NLP',
+      title: "Flood Disaster Extraction in Sumatra",
+      category: "INDONESIAN NLP · INFORMATION EXTRACTION",
       year: '2026',
       glyph: '🌊',
       accent: '#4eb8ff',
       img: 'img/banjir.jpg',
-      tagline: 'A rule-based NLP pipeline extracting location, time, cause, and casualties of Sumatra flood disasters from Twitter/X.',
+      tagline: "Rule-based Indonesian NLP pipeline extracting actionable flood-event information from unstructured X posts.",
       overview: 'A project for the NLP Course Final Exam (UAS) at Universitas Budi Luhur. The pipeline extracts flood disaster details from Indonesian-language tweets across Sumatra. It processes data through four distinct stages (Scanner, Parser, Translator, Evaluator) using BIO-tagging and a geographic region gazetteer, achieving high precision for disaster response mapping.',
       features: [
         'Four-stage pipeline architecture: Scanner, Parser, Translator, and Evaluator.',
@@ -467,13 +467,13 @@
       links: { pdf: 'Data_Portofolio/Laporan Proyek UAS NLP (1).pdf', pdf_label: 'Read NLP Project Report (PDF)' }
     },
     sentimen: {
-      title: 'Sentiment Analysis: Jokowi Fake Degree Controversy',
-      category: 'ML Midterm · Sentiment Analysis',
+      title: "Sentiment Analysis: Jokowi Degree Controversy",
+      category: "INDONESIAN NLP · SENTIMENT RESEARCH",
       year: '2026',
       glyph: '💬',
       accent: '#ff6b81',
       img: 'img/sentimen.jpg',
-      tagline: 'Public sentiment classification on the Jokowi fake degree controversy on Twitter/X using Naive Bayes and the KSI Lexicon.',
+      tagline: "A comparative sentiment-analysis study of public X posts about the Jokowi degree controversy.",
       overview: 'A research paper for the Machine Learning Midterm (UTS) at Universitas Budi Luhur. The project analyzes public sentiment on X regarding the "Jokowi Fake Degree" controversy. Analyzing 979 cleaned tweets, we performed entropy modeling (Shannon entropy: 2.628) and term frequency distribution, followed by classification comparing the 9,071-word Indonesian KSI Lexicon against a Naive Bayes classifier.',
       features: [
         'Preprocessed 1,000 crawled tweets into 979 clean data points.',

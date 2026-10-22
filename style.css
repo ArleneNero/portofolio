@@ -1101,3 +1101,12 @@ body.modal-open{overflow:hidden}
 .pcard__project-link{position:absolute;top:22px;left:24px;z-index:6;display:inline-flex;align-items:center;gap:6px;padding:9px 13px;background:rgba(8,13,17,.84);border:1px solid rgba(255,255,255,.36);border-radius:999px;color:#fff;font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:.045em;text-decoration:none;backdrop-filter:blur(8px);transition:background .2s,border-color .2s,transform .2s}
 .pcard__project-link:hover,.pcard__project-link:focus-visible{background:#fff;color:#111;border-color:#fff;transform:translateY(-1px)}
 @media(max-width:560px){.pcard__project-link{top:14px;left:14px;font-size:9.5px;padding:8px 11px}}
+
+
+/* Editorial summaries for all eight Selected Work cards: same original horizontal layout. */
+.pcard__title{font-size:clamp(22px,2.8vw,34px);line-height:1.08;max-width:20ch}
+.pcard__summary{margin-top:10px;max-width:51ch;color:rgba(255,255,255,.91);font-size:clamp(12px,1.14vw,14px);line-height:1.56;font-weight:400;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden;text-wrap:pretty}
+.pcard__teaser{margin-top:12px}
+.pcard__cta{margin-top:15px}
+.pcard__cat{font-size:10px;letter-spacing:.11em;line-height:1.45}
+@media (max-width:560px){.pcard__info{padding:23px}.pcard__title{font-size:clamp(22px,6.2vw,28px)}.pcard__summary{font-size:12.5px;line-height:1.45;-webkit-line-clamp:3;line-clamp:3}.pcard__teaser{gap:5px;margin-top:11px}.pcard__teaser span{font-size:9px;padding:4px 7px}.pcard__cta{margin-top:12px}}
