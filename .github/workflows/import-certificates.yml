@@ -1,0 +1,53 @@
+name: Import Portfolio Certificate Images
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/import-certificates.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import-certificates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch certificate originals from temporary Canva upload URLs
+        env:
+          PALCOM_URL: 'https://media.canva.com/v2/image-resize/format:PNG/height:140/quality:100/uri:ifs%3A%2F%2FM%2F4a787fb7-992e-4ca9-9f9f-146986089708/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAGAkA4BZ71WYnkJ08COIYF9SfHLpE5MjO4GnegFnXHme&exp=1792684577&osig=AAAAAAAAAAAAAAAAAAAAAIkX7CBT6HuP8bzMTNGaw99lEQsGV8VlbjdQd_jGmJoV&signer=media-rpc&token=AAIAAU0AJDRhNzg3ZmI3LTk5MmUtNGNhOS05ZjlmLTE0Njk4NjA4OTcwOAAAAAABoWRT0Oi3Xolh5yUiBU-riT0lxKcfQckwTa0UU5chj5mAhnPo4g&x-canva-quality=thumbnail'
+          DQLAB_URL: 'https://media.canva.com/v2/image-resize/format:PNG/height:140/quality:100/uri:ifs%3A%2F%2FM%2Fca8db319-1d0f-41dc-b871-c0f1a8f14895/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAALDFPlxror0WERz3TAmrYpNLH-gmAuX1z3fwz1iQrnyl&exp=1792685483&osig=AAAAAAAAAAAAAAAAAAAAAKqb_SIBUbiRBg9bFCyXbudN-greeUQ3ZlWvqiui-5yx&signer=media-rpc&token=AAIAAU0AJGNhOGRiMzE5LTFkMGYtNDFkYy1iODcxLWMwZjFhOGYxNDg5NQAAAAABoWRho_ji036-OCmAkPuLUDjmiqYbNShNX9PY5Cf57vAyA7eVZg&x-canva-quality=thumbnail'
+        run: |
+          python3 - <<'PY'
+          import os, subprocess, struct, pathlib
+          certificates = [
+            (os.environ["PALCOM_URL"], "img/certificates/palcomtech-2026.png", 1032, 725),
+            (os.environ["DQLAB_URL"], "img/certificates/dqlab-top100-2026.png", 1080, 760),
+          ]
+          pathlib.Path("img/certificates").mkdir(parents=True, exist_ok=True)
+          for url, path, width, height in certificates:
+            large = url.replace("height:140", f"height:{height}").replace("width:200", f"width:{width}")
+            candidates=[large, url]
+            succeeded=False
+            for candidate in candidates:
+              result=subprocess.run(["curl", "--fail", "--location", "--silent", "--show-error", "--max-time", "45", "-o", path, candidate])
+              if result.returncode != 0: continue
+              data=pathlib.Path(path).read_bytes()
+              if data[:8]!=b"\x89PNG\r\n\x1a\n": continue
+              w,h=struct.unpack(">II",data[16:24])
+              print(f"{path}: {w}x{h} ({len(data)} bytes)")
+              if w < 600:
+                print("Image below required readable size; refusing low-resolution import")
+                continue
+              succeeded=True
+              break
+            if not succeeded: raise RuntimeError(f"Could not fetch readable certificate: {path}")
+          PY
+      - name: Commit the archived original certificate images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add img/certificates/
+          if ! git diff --cached --quiet; then
+            git commit -m "assets: archive verified PalComTech and DQLab certificates"
+            git push origin HEAD:main
+          fi
