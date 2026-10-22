@@ -343,7 +343,7 @@
       metrics: [{ v: '1,899', l: 'Posts analysed' }, { v: '85.0%', l: 'Hold-out accuracy' }, { v: '0.852', l: 'Weighted F1' }, { v: '1st', l: 'Innovation Award' }],
       facts: [{ k: 'Evaluation', v: '100 hold-out samples' }, { k: 'Recognition', v: 'PalComTech 2026' }, { k: 'Limit', v: 'Not a diagnosis' }],
       stack: ['Python', 'Sentence-BERT', 'XGBoost', 'scikit-learn', 'SHAP', 'Streamlit'],
-      links: { repo: 'https://github.com/ArleneNero/dashboard-sistem-deteksi-mental-health', live: 'https://dashboard-mental-health.streamlit.app/' }
+      links: { repo: 'https://github.com/ArleneNero/dashboard-sistem-deteksi-mental-health', live: 'https://dashboard-sistem-deteksi-mental-health.streamlit.app/' }
     },
     foresight: {
       title: "ForeSight — Predictive Crowd Management",
@@ -402,7 +402,7 @@
         'img/buzzer/slide-17.png',
         'img/buzzer/slide-18.png'
       ],
-      links: { repo: 'https://github.com/ArleneNero/deteksi-buzzer-terkoordinasi', dashboard: 'https://github.com/ArleneNero/dashboard-sistem-deteksi-buzzer-igrs' }
+      links: { repo: 'https://github.com/ArleneNero/deteksi-buzzer-terkoordinasi', dashboard: 'https://github.com/ArleneNero/dashboard-sistem-deteksi-buzzer-igrs', live: 'https://dashboard-sistem-deteksi-buzzer-igrs.streamlit.app/' }
     },
     museum: {
       title: "Nusantara Museum 3D",
