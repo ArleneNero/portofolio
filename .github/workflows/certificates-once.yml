@@ -1,0 +1,40 @@
+name: Archive Achievement Certificates
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/certificates-once.yml
+permissions:
+  contents: write
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Copy uploaded certificates to permanent local images
+        run: |
+          python3 - <<'PY'
+          import pathlib, re, subprocess, struct
+          source=subprocess.check_output(["git","show","92df0d2eff2a1418508d118355bb475436f52a5e:.github/workflows/import-certificates.yml"],text=True)
+          pathlib.Path("img/certificates").mkdir(parents=True,exist_ok=True)
+          for key,path in [("PALCOM_URL","img/certificates/palcomtech-2026.png"),("DQLAB_URL","img/certificates/dqlab-top100-2026.png")]:
+            match=re.search(r"^\s*"+key+r": '([^']+)'",source,re.M)
+            if not match: raise ValueError("Missing source image "+key)
+            subprocess.run(["curl","--fail","--location","--silent","--show-error","--max-time","30","-o",path,match.group(1)],check=True)
+            data=pathlib.Path(path).read_bytes()
+            if data[:8]!=b"\x89PNG\r\n\x1a\n":raise ValueError("Downloaded source is not an image")
+            width,height=struct.unpack(">II",data[16:24])
+            if width < 100:raise ValueError("Image is too small")
+            print(path,width,height,len(data))
+          PY
+      - name: Commit certificate images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add img/certificates/
+          if ! git diff --cached --quiet; then
+            git commit -m "assets: include achievement certificate originals as previews"
+            git push origin HEAD:main
+          fi
