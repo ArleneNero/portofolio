@@ -1095,3 +1095,16 @@ body.modal-open{overflow:hidden}
 .pmodal__cover.has-screenshot .pmodal__cover-img{object-fit:contain}
 .pmodal__cover.has-screenshot .c-grid,.pmodal__cover.has-screenshot .c-shade{display:none}
 @media (max-width:560px){.pcard--screenshot .pcard__img{height:55%}}
+
+/* Selected Work readability: show actual projects immediately, not a title-only carousel slide. */
+.gallery__head { margin-bottom: clamp(20px, 3vw, 34px); }
+.gallery__head .gallery__intro { width: 100%; max-width: none; padding: 0; margin-top: clamp(20px, 3vw, 32px); display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 18px 28px; }
+.gallery__head .gallery__intro h2 { font-size: clamp(40px, 5.5vw, 68px); line-height: .96; margin: 0; }
+.gallery__head .gallery__intro p { max-width: 47ch; margin: 0 0 4px; line-height: 1.65; font-size: clamp(13px, 1.4vw, 16px); }
+.gallery__viewport .gallery__track { padding-top: 4px; padding-bottom: 10px; }
+.gallery__viewport .pcard:first-child { scroll-snap-align: start; }
+@media (max-width: 720px) {
+  .gallery__head .gallery__intro { display: block; }
+  .gallery__head .gallery__intro h2 { font-size: clamp(36px, 10vw, 52px); }
+  .gallery__head .gallery__intro p { margin-top: 14px; font-size: 14px; }
+}
