@@ -876,9 +876,16 @@ body.modal-open{overflow:hidden}
 .service-card__foot .dot{width:6px;height:6px;border-radius:50%;background:var(--lime);flex:none}
 .section__sub em{font-style:italic;color:var(--text)}
 
-/* ============ Nav wordmark (logo MA dihapus) ============ */
-.nav__logo--name{ font-family:var(--font-display); font-weight:700; letter-spacing:-.01em; font-size:1.02rem; }
-.nav__logo--name span{ color:var(--lime); }
+/* ============ Navbar wordmark: portofolio. ============ */
+.nav__logo--name{
+  font-family:var(--font-display);
+  font-weight:700;
+  font-size:clamp(1.3rem,2.3vw,1.5rem);
+  line-height:1;
+  letter-spacing:-.065em;
+  white-space:nowrap;
+}
+.nav__logo--name span{color:#45b7d2;}
 
 /* ============ Skills: modern + interaktif ============ */
 .skills-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
