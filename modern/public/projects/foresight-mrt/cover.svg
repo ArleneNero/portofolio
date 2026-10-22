@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720"><rect width="1280" height="720" fill="#101D2D"/>
+<rect x="44" y="44" width="1192" height="634" rx="27" fill="#192C42" stroke="#35516A" stroke-width="2"/>
+<path d="M71 44h215v634H71q-27 0-27-27V71q0-27 27-27Z" fill="#102034"/>
+<text x="83" y="115" font-family="Arial,sans-serif" font-size="31" font-weight="bold" fill="#FFFFFF">ForeSight</text>
+<text x="85" y="145" font-family="Arial,sans-serif" font-size="13" fill="#99BDCF">MRT CROWD INTELLIGENCE</text>
+<rect x="75" y="220" width="185" height="52" rx="12" fill="#304963"/><text x="100" y="254" font-family="Arial,sans-serif" font-size="18" fill="#FFFFFF">Overview</text>
+<text x="99" y="327" font-family="Arial,sans-serif" font-size="17" fill="#B0C8D8">Risk monitor</text>
+<text x="99" y="388" font-family="Arial,sans-serif" font-size="17" fill="#B0C8D8">Prediction</text>
+<text x="99" y="448" font-family="Arial,sans-serif" font-size="17" fill="#B0C8D8">What-if analysis</text>
+<rect x="78" y="590" width="170" height="49" rx="12" fill="#283E53"/><text x="94" y="619" font-family="Arial,sans-serif" font-size="14" fill="#A8CEDA">Simulated replay</text>
+<text x="322" y="107" font-family="Arial,sans-serif" letter-spacing="3" font-size="13" font-weight="bold" fill="#A2C0D6">PREDICTIVE OPERATIONS</text>
+<text x="322" y="167" font-family="Arial,sans-serif" font-size="37" font-weight="bold" fill="#FFFFFF">Crowd risk forecast</text>
+<text x="322" y="202" font-family="Arial,sans-serif" font-size="18" fill="#B5C8D6">15 / 30 / 45 / 60 minute horizons</text>
+<rect x="322" y="246" width="265" height="126" rx="16" fill="#2A435B"/>
+<rect x="606" y="246" width="265" height="126" rx="16" fill="#2A435B"/>
+<rect x="889" y="246" width="306" height="126" rx="16" fill="#2A435B"/>
+<text x="342" y="282" font-family="Arial,sans-serif" font-size="15" fill="#ACCCDD">STATION WATCH</text><text x="342" y="331" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="#F2F7FB">Bundaran HI</text>
+<text x="626" y="282" font-family="Arial,sans-serif" font-size="15" fill="#ACCCDD">EVENT CONTEXT</text><text x="626" y="331" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="#F2F7FB">Istora Mandiri</text>
+<text x="910" y="282" font-family="Arial,sans-serif" font-size="15" fill="#ACCCDD">OPERATOR TOOLS</text><text x="910" y="331" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="#F2F7FB">What-if simulator</text>
+<rect x="322" y="402" width="872" height="236" rx="17" fill="#21384E"/>
+<text x="347" y="439" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#E8F3F8">Forecast and station replay</text>
+<text x="1091" y="439" font-family="Arial,sans-serif" font-size="13" fill="#94B2C4">Concept</text>
+<path d="M350 489H1168M350 542H1168M350 597H1168" stroke="#3A5367" stroke-width="2"/>
+<path d="M353 560 Q415 544 478 551 T606 510 T729 526 T848 473 T984 490 T1103 455 T1160 447" fill="none" stroke="#91D1D8" stroke-width="6" stroke-linecap="round"/>
+<path d="M353 592 Q415 596 478 576 T606 561 T729 567 T848 542 T984 548 T1103 517 T1160 512" fill="none" stroke="#6D95AA" stroke-width="5" stroke-linecap="round"/>
+</svg>
